@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;600&display=swap");
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  @apply bg-zinc-900 text-white;
+}
+
+.text-gradient {
+  background-color: #fbab7e;
+  background-image: linear-gradient(
+    62deg,
+    #fbab7e 0%,
+    #f7ce68 50%,
+    #ff9290 100%
+  );
+
+  @apply text-transparent bg-clip-text bg-gradient-to-br;
+}
+.text-sec-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-br from-[#4158d0] to-[#c850c0];
+}
+.bg-gradient {
+  background-color: #fbab7e;
+  background-image: linear-gradient(
+    62deg,
+    #fbab7e 0%,
+    #f7ce68 50%,
+    #ff9290 100%
+  );
+}
+#modal {
+  background-color: rgba(66, 66, 66, 0.25);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal:empty {
+  display: none;
+}
