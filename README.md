@@ -1,3 +1,3 @@
-## Digital-Wills
+## Flow
 
-A decenterlised platform for Managing your wills
+A Decentralised platform to manage your Recursive payments
